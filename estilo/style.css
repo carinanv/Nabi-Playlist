@@ -1,0 +1,25 @@
+@charset = "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&family=VT323&display=swap');
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "VT323", monospace;
+}
+
+:root {
+    --cor-fundo-pirncipal:#537D5D;
+    --cor-player-1:#FFD0C7;
+    --cor-player-2:#E69DB8;
+    --cor-botao:#F4E7E1;
+    --cor-borda:#997C70;
+}
+
+body {
+    background: #333;
+    padding: 10px;
+    margin: 15px;
+}
+
+
