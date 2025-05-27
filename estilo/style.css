@@ -14,12 +14,56 @@
     --cor-player-2:#E69DB8;
     --cor-botao:#F4E7E1;
     --cor-borda:#997C70;
+    --cor-borda-main:#426249;
 }
 
 body {
-    background: #333;
-    padding: 10px;
-    margin: 15px;
+    background-color: var(--cor-fundo-pirncipal);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
+
+.container {
+    background-color: var(--cor-player-1);
+    border: 4px solid #426249;
+    border-radius: 20px;
+    padding: 20px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .tela-playlist {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .song-image img {
+        width: 300px;
+        border-radius: 50px;
+    }
+
+    .play-area .controls {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    button {
+
+    }
+
+    .menu p {
+        font-size: 1.5em;
+        font-weight: bold;
+        letter-spacing: 5%;
+        color: var(--cor-player-2);
+        
+    }
 
 
