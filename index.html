@@ -8,19 +8,18 @@
     <link rel="stylesheet" href="estilo/style.css">
 </head>
 <body>
-    <container class="container">
         <main class="tela-playlist">
-            <section class="song-name">
-                <h2>Lusi Zhao - I Have Someone I Like</h2>
+            <section class="song-name-box">
+                <div id="song-title">Lusi Zhao - I Have Someone I Like</div>
             </section>
 
             <section class="song-image">
-                <!-- img -->
+                <img src="Images/copo.jpeg" alt="musica imagem" id="song-image-img">
             </section>
 
             <section class="play-area">
-                <audio controls>
-                    <source src="music.mp3" type="audio/mp3">
+                <audio controls autoplay loop id="audio-play">
+                    <source id="audio-souce" src="songs/Touch - Anno Domini Beats.mp3" type="audio/mp3">
                     Seu navegador não suporta o elemento de áudio.
                 </audio>
 
@@ -32,7 +31,6 @@
             </section>
         </main>
 
-    </container>
     
 </body>
 </html>

@@ -17,4 +17,59 @@
     --cor-borda-main:#426249;
 }
 
+body {
+    background:#FFD0C7 url(../Images/fundo.jpeg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);   
+}
 
+.tela-playlist {
+    background-color: hsla(133, 20%, 41%, 0.788);
+    width: 300px;
+    height: 520px;
+    border: 3px solid #426249;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.song-name-box {
+    background-color: #e69db8b4;
+    width: 250px;
+    margin: 5px;
+    padding: 5px;
+    border: 3px solid #E69DB8;
+    border-radius: 80px;
+
+}
+
+.song-name h2 {
+    font-size: 1.1em;
+    color: #ffffff;
+    text-shadow:  0px 1px 2px rgba(0, 0, 0, 0.521) ;
+    
+}
+
+.song-image {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+
+}
+
+.song-image > img {
+    border-radius: 40px;
+    width: 45vw;
+    height: 50vh;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.342);
+    margin: 5px;
+}
