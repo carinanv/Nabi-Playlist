@@ -32,7 +32,7 @@ body {
 .tela-playlist {
     background-color: hsla(133, 20%, 41%, 0.788);
     width: 300px;
-    height: 520px;
+    height: 90vh;
     border: 3px solid #426249;
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
@@ -40,6 +40,8 @@ body {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
+    align-items: center;
+    
 }
 
 .song-name-box {
@@ -50,9 +52,13 @@ body {
     border: 3px solid #E69DB8;
     border-radius: 80px;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
-.song-name h2 {
+.song-name-box > #song-title {
     font-size: 1.1em;
     color: #ffffff;
     text-shadow:  0px 1px 2px rgba(0, 0, 0, 0.521) ;
@@ -62,14 +68,58 @@ body {
 .song-image {
     display: flex;
     justify-content: center;
-    padding: 5px;
+    align-items: center;
+    width: 100%;
+    height: 60vh;
 
 }
 
-.song-image > img {
-    border-radius: 40px;
-    width: 45vw;
-    height: 50vh;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.342);
-    margin: 5px;
+#song-image-img {
+    width: 44vw;
+    object-fit:cover; /*Mantém o preenchimento sem deformar*/
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  
 }
+
+
+/*Area do Palyer*/
+.play-area {
+    background-color: var(--cor-player-1);
+    border: 6px solid #E69DB8;
+    border-radius: 30px;
+    padding: 20px;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.288);
+}
+
+.buttons-area {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.buttons-area .botao {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #E69DB8;
+    border-radius: 50%;
+    background-color: var(--cor-borda);
+    box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.295);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: grabbing;
+}
+
+.botao img {
+    width: 80%;
+    object-fit: contain;    
+}
+
